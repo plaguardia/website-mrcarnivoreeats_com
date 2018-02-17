@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html , body
+{
+	background-image:url(../Images/WebBackground_LoFi.png);
+	/*background-color: #04F7EB;*/
+	margin: 0;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	overflow-y: hidden;
+}
+
+.pagewrap
+{
+	margin: 0;
+	height:100%;
+	width:100%;	
+}
+
+.L_navi
+{
+	position: relative;
+	width:20%;
+	height:100%;
+	float:left;
+	background-color: #333;
+}
+
+.L_naviHeaderImg {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 100%;
+}
+
+.L_navi_ButContain{
+	height: 12%;
+	position: relative;
+}
+
+.L_navi_ButContain img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.L_navi_ButContain:hover .overlay_Fade{
+	opacity: 1;
+}
+
+.L_navi_ButContain:hover .overlay_SlideRight{
+	width: 100%;
+	left: 0;
+}
+
+.L_navi_ButContain:hover .overlay_SlideLeft{
+	width: 100%;
+}
+
+.overlay_SlideRight {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  background-image: url(../Images/rw_feed_nav.png);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlay_SlideLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlay_Fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.footer,.push imh {
+width: 100%;
+}
+
+.footer,.push {
+ position: absolute;
+	bottom: 0;
+	left:  0;
+}
+
+.R_feed
+{
+	width:80%;
+	float:right;
+	height:100%;
+}
+
+.R_feed_content{	
+	display: block;
+	width: 90%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Subscribe_But{
+	position: fixed;
+	width: 10%; 
+	bottom:10px; 
+	right: 10px;
+	cursor: pointer;
+}
+
+.Subscribe_But:Hover{
+	opacity: .5;
+}

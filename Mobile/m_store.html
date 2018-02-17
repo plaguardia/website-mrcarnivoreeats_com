@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<!--Bootstraps_start-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--Bootstraps_end-->
+<link rel="stylesheet" type="text/css" href="m_store.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<title>Mr. Carnivore</title>
+</head>
+
+<body>
+        
+	<!--START NAVI-->
+	<div class="topnav" id="myTopnav">
+		<a href="#store"  class="active">Store</a>
+		<a href="m_band.html">Band</a>
+  		<a href="m_home.html">FEED</a>
+		<a href="m_media.html">Media</a>
+		<a href="m_events.html">Events</a>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><!--&#9776;--><img src="../Images/m_navi_menu.png" alt="mr.carnivore menu"></a>
+	</div>
+
+	<script>
+		function myFunction() {
+    	var x = document.getElementById("myTopnav");
+    		if (x.className === "topnav") {
+        		x.className += " responsive";
+    		} else {
+        		x.className = "topnav";
+    		}
+		}
+	</script>
+	
+	<!--START BlackBox-->
+	<div class="BlackBox">
+		<table>
+  			<tr>
+    			<th style="width: 55%"><img src="../Images/Store_Img/MaleShirt_notxt.png" alt="MrCarnivoreTshirt"></th>
+				<th style="width: 35%">
+				Male T-Shirts
+				
+					<!--START PAYPAL MaleT-->
+					 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="A6B3P7LLX394S">
+							<table class="PayPaltable">
+								<tr><td><input type="hidden" name="on0" value="Color">Color</td></tr><tr><td><select name="os0">
+									<option value="Red">Red $12.00 USD</option>
+									<option value="Black">Black $12.00 USD</option>
+								</select> </td></tr>
+								<tr><td><input type="hidden" name="on1" value="Size">Size</td></tr><tr><td><select name="os1">
+									<option value="S">S </option>
+									<option value="M">M </option>
+									<option value="L">L </option>
+									<option value="XL">XL </option>
+									<option value="XXL">XXL </option>
+									</select> </td></tr>
+							</table>
+						 	<div class="PayPalBut">
+								<input type="hidden" name="currency_code" value="USD">
+								<input type="image" style="width: 100%" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="2" height="2">
+						 	</div>
+					</form>
+					<!--END PAYPAL MaleT-->
+				</th>
+  			</tr>
+			 <tr>
+    			<th style="width: 55%"><img src="../Images/Store_Img/FemaleShirt_notxt.png" alt="MrCarnivoreTshirt"></th>
+				<th style="width: 35%">
+				Female T-Shirts
+				 
+					<!--START paypal FMale TShirt-->
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="CXTHJKMSTRNTN">
+							<table class="PayPaltable">
+								<tr><td><input type="hidden" name="on0" value="Color">Color</td></tr><tr><td><select name="os0">
+									<option value="Red">Red $12.00 USD</option>
+									<option value="Black">Black $12.00 USD</option>
+								</select> </td></tr>
+								<tr><td><input type="hidden" name="on1" value="Size">Size</td></tr><tr><td><select name="os1">
+									<option value="S">S </option>
+									<option value="M">M </option>
+									<option value="L">L </option>
+									<option value="XL">XL </option>
+									<option value="XXL">XXL </option>
+								</select> </td></tr>
+							</table>
+							<div class="PayPalBut">
+								<input type="hidden" name="currency_code" value="USD">
+								<input type="image" style="width: 100%" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</div>
+					</form>
+					<!--END  Paypal FMALE TSHIT-->
+				 </th>
+  			</tr>
+		</table>
+		
+		<img src="../Images/EventsFooter.png" alt="MrCarnivoreBand">
+	</div>
+	<!--END BlackBox-->
+
+	<!--START PopUp Subscribe-->
+	<div class="container">
+		<!-- Trigger the modal with a button -->
+		<button type="button" style="width: 20%; margin-bottom: 50px;" data-toggle="modal" data-target="#myModal"><img style="width: 100%" src="../Images/subscribe_us.png" alt="MrCarnivore_Subscribe"></button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<!--<h4 class="modal-title">Modal Header</h4>-->
+					</div>
+					<div class="modal-body">
+						<!-- Begin MailChimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+						<style type="text/css">
+						#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+						/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+						We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+						</style>
+
+						<div id="mc_embed_signup">
+							<form action="https://mrcarnivoreeats.us17.list-manage.com/subscribe/post?u=e97cfbbae2444b2d939a33c24&amp;id=36f3ac3d6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+								<h2>Subscribe for Updates</h2>
+								<div class="mc-field-group">
+									<label for="mce-EMAIL">Email Address </label>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e97cfbbae2444b2d939a33c24_36f3ac3d6e" tabindex="-1" value=""></div>
+								<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+							</form>
+						</div>
+						<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+						<!--End mc_embed_signup-->
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>  
+	</div>
+	<!--START PopUp Subscribe-->
+
+
+</body>
+</html>

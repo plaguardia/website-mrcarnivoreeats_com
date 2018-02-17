@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<!--Bootstraps_start-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--Bootstraps_end-->
+<link rel="stylesheet" type="text/css" href="m_media.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<title>Mr. Carnivore</title>
+</head>
+
+<body>  
+	<!--START NAVI-->
+	<div class="topnav" id="myTopnav">
+		<a href="#media" class="active">Media</a>
+  		<a href="m_home.html">FEED</a>
+		<a href="m_band.html">Band</a>
+  		<a href="m_events.html">Events</a>
+		<a href="m_store.html">Store</a>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><!--&#9776;--><img src="../Images/m_navi_menu.png" alt="mr.carnivore menu"></a>
+	</div>
+
+	<script>
+		function myFunction() {
+    	var x = document.getElementById("myTopnav");
+    		if (x.className === "topnav") {
+        		x.className += " responsive";
+    		} else {
+        		x.className = "topnav";
+    		}
+		}
+	</script>
+	<!-- END NAVI-->
+	
+	<!--START Knees Youtube-->
+	<div class="video-container">
+		<iframe src="https://www.youtube.com/embed/Mz45b_evfns?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<!--END Knees Youtube-->
+	
+	<div style="width: 80%; margin: 50px auto;">
+	<!--START SoundClound-->
+	<iframe style="margin-top: 25px" width="100%" height="110" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/383175749&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+	<!--END SoundCloud-->
+			
+	<!--START Spotify-->
+	<iframe style="margin-top: 25px" src="https://open.spotify.com/embed/track/4xwIYlcrut0SDKwrLFAbdU" width="100%" height="110" frameborder="0" allowtransparency="true"></iframe>
+	<!--END Spotify-->
+
+	<!--START ITUNES-->
+	<iframe src="https://tools.applemusic.com/embed/v1/song/1336658132?country=us&itscg=30200&itsct=afftoolset_1" height="110px" width="100%" frameborder="0"></iframe>
+	<!--END ITUNES-->
+	</div>
+	
+	<!--START YouTube Videos-->
+	<div class="video-container">
+		<!--Hot Air Balloon-->
+		<iframe src="https://www.youtube.com/embed/1c3R20SGHaM?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<!--END YouTube Videos-->
+
+			<!--StartList/BuyTable-->
+			<table>
+				<tr>
+					<th><img style="-webkit-filter: invert(1);filter: invert(1);" src="../Images/Icons/Buy/Buy.png" alt="MrCarnivore_Buy"></th>
+					<th><img style="-webkit-filter: invert(1);filter: invert(1);" src="../Images/Icons/Listen/Listen.png" alt="MrCarnivore_Listen" ></th>
+				</tr>
+				<tr style="background-color: #F2F2F2">
+					<td>
+					<!--<a href="#" target="_blank"><img src="../Images/Icons/Buy/Apple.png" alt="MrCarnivore_Apple"></a>-->
+					<a href="https://play.google.com/store/music/artist/Mr_Carnivore?id=Axivddlmbjtgi6nb7in625xhskq&hl=en" target="_blank"><img src="../Images/Icons/Buy/Google.png" alt="MrCarnivore_Google"></a>
+					<a href="https://itunes.apple.com/us/artist/mr-carnivore/1336658129" target="_blank"><img src="../Images/Icons/Listen/AppleMusic.png" alt="MrCarnivore_Applemusic"></a>
+					<a href="https://www.amazon.com/s/ref=ntt_srch_drd_B07938ZPF7?ie=UTF8&field-keywords=Mr.%20Carnivore&index=digital-music&search-type=ss" target="_blank"><img src="../Images/Icons/Buy/Amazon.png" alt="MrCarnivore_Amazon"></a>		
+					</td>
+					<td>
+					<a href="https://open.spotify.com/artist/0Wtcowp1bMaZgijeUJ1DBn?si=l3xOGbApTBSgjYdqzFvDjQ" target="_blank"><img src="../Images/Icons/Listen/Spotify.png" alt="MrCarnivore_Spotify"></a>
+					<!--<a href="#" target="_blank"><img src="../Images/Icons/Listen/Deezer.png" alt="MrCarnivore_Deezer"></a>-->
+					<a href="https://soundcloud.com/mrcarnivore" target="_blank"><img src="../Images/Icons/Listen/SoundCloud.png" alt="MrCarnivore_SoundCloud"></a>
+					<a href="https://www.youtube.com/channel/UCgQuLRedkxCFrA2-oHgZHsw" target="_blank"><img src="../Images/Icons/Listen/YouTube.png" alt="MrCarnivore_youtube"></a>
+					</td>
+				</tr>
+			</table>
+		<!--END List/BuyTable-->
+	
+	
+	<!--START PopUp Subscribe-->
+	<div class="container">
+		<!-- Trigger the modal with a button -->
+		<button type="button" style="width: 20%; margin-bottom: 50px;" data-toggle="modal" data-target="#myModal"><img style="width: 100%" src="../Images/subscribe_us.png" alt="MrCarnivore_Subscribe"></button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<!--<h4 class="modal-title">Modal Header</h4>-->
+					</div>
+					<div class="modal-body">
+						<!-- Begin MailChimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+						<style type="text/css">
+						#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+						/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+						We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+						</style>
+
+						<div id="mc_embed_signup">
+							<form action="https://mrcarnivoreeats.us17.list-manage.com/subscribe/post?u=e97cfbbae2444b2d939a33c24&amp;id=36f3ac3d6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+								<h2>Subscribe for Updates</h2>
+								<div class="mc-field-group">
+									<label for="mce-EMAIL">Email Address </label>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e97cfbbae2444b2d939a33c24_36f3ac3d6e" tabindex="-1" value=""></div>
+								<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+							</form>
+						</div>
+						<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+						<!--End mc_embed_signup-->
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>  
+	</div>
+	<!--START PopUp Subscribe-->
+
+
+</body>
+</html>

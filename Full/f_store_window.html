@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>f_store_window</title>
+</head>
+
+<style>
+	/*Start buynow CSS*/
+.PayPalBut {
+	width: 75%;
+	margin: auto;
+}
+
+.PayPaltable {
+	color: #f2f2ff2;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 3vw;
+	vertical-align: middle;
+}
+
+.PayPaltable input, select {
+font-size: 1.5vw;
+	width: 100%;
+}
+
+/*End buynow CSS*/
+table {
+	width: 100%;
+	/*border: 0;*/
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+table img {
+ 	height: auto;
+	width: 75%;
+}
+
+table tr th {
+	height: 150px;
+	color: #f2f2f2;
+	font-size: 4vw;
+}
+	
+	
+</style>
+	
+<body style="margin: 0 auto; overflow-x: hidden">
+			<table style="margin-left: auto;margin-right: auto">
+  			<tr>
+    			<th style="width: 55%"><img src="../Images/Store_Img/MaleShirt_notxt.png" alt="MrCarnivoreTshirt"></th>
+				<th style="width: 35%">
+				Male T-Shirts
+				
+					<!--START PAYPAL MaleT-->
+					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="3X6RM564F8KQW">
+						<table>
+							<tr><td><input type="hidden" name="on0" value="Color">Color</td></tr><tr><td><select name="os0">
+							<option value="Red">Red $12.00 USD</option>
+							<option value="Black">Black $12.00 USD</option>
+							</select> </td></tr>
+							<tr><td><input type="hidden" name="on1" value="Size">Size</td></tr><tr><td><select name="os1">
+							<option value="S">S </option>
+							<option value="M">M </option>
+							<option value="L">L </option>
+							<option value="XL">XL </option>
+							<option value="XXL">XXL </option>
+							</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="image" style="width: 60%" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+					<!--END PAYPAL MaleT-->
+				</th>
+  			</tr>
+			 <tr>
+    			<th style="width: 55%"><img src="../Images/Store_Img/FemaleShirt_notxt.png" alt="MrCarnivoreTshirt"></th>
+				<th style="width: 35%">
+				Female T-Shirts
+				 
+					<!--START paypal FMale TShirt-->
+					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="Z5T2UYCPVRKCA">
+						<table>
+							<tr><td><input type="hidden" name="on0" value="Color">Color</td></tr><tr><td><select name="os0">
+							<option value="Red">Red $12.00 USD</option>
+							<option value="Black">Black $12.00 USD</option>
+							</select> </td></tr>
+							<tr><td><input type="hidden" name="on1" value="Size">Size</td></tr><tr><td><select name="os1">
+							<option value="S">S </option>
+							<option value="M">M </option>
+							<option value="L">L </option>
+							<option value="XL">XL </option>
+							<option value="XXL">XXL </option>
+							</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="image" style="width: 60%" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+					<!--END  Paypal FMALE TSHIT-->
+				 </th>
+  			</tr>
+		</table>
+</body>
+</html>
