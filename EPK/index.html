@@ -11,6 +11,9 @@
       <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
     <script src="js/responsive-nav.js"></script>
+    <style>
+        #more {display: none;}
+    </style>
   </head>
   <body>
 
@@ -43,6 +46,49 @@
       <p>All of us have been writting, recording and performing music our entire lives.</p>
       <p>Our first self recorded album (Blue Light) was released in 2018,</p>
       <p>and we are working on more to share...</p>
+      <p style="width:50%"><span id="dots">...</span>
+        <br>
+        <span id="more">The group’s founders and brothers Pat LaGuardia (lead vocalist and guitar) and Joe LaGuardia (bass),
+          have been playing music together since a young age. Pat has written 100s of songs over the
+          years as a solo artist and Joe has been in several bands and has played with many artists
+          over the same period. In the process of helping put on a local open mic they realized playing
+          together was pretty natural and pretty powerful. Pat’s songs, inspired by such artists as,
+          The Avett Brother, Bon Iver, and The Milk Carton Kids, were well received at the open mic. Joe,
+          influenced by active artists such as The Foo Fighters and Beck, immediately realized that it
+          was necessary to record the songs with a full band and release them on a full scale. 
+          <br><br>
+          From an early age, the members of Mr. Carnivore knew that playing music was something
+          that inspired them and was something they wanted to do long term. Everyone feels
+          very lucky to be able to create in an atmosphere that does not rely on ego or self interest,
+          but relies on an unfiltered focus to do what they feel is the best for the portrayal of the
+          music. This is not a just a group of musicians, but a group of friends. The members feel that
+          this greatly benefits the music because you can feel the love for the music and for each other
+          in the compositions. The goal with this band is to create a community surrounding their
+          music. Family and friends are the base of Mr. Carnivore’s following, but the inclusive nature
+          of the group is something that is felt beyond this inner circle. Bassist Joe LaGuardia says,
+          “the music may come from within this small group, but is meant for everyone.”
+          Mr. Carnivore is actively pushing their music out on all fronts by obtaining press,
+          airplay, placements and live shows. Pay attention to the groups news feed to see how you
+          can engage and enjoy Mr. Carnivore.</span></p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+      
+      <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
       
       <table style="width:100%; max-height: 70%; margin-top: 20px; margin-bottom: 20px;">
         <tr>
