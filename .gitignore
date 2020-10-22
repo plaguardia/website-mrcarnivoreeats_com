@@ -5,6 +5,6 @@ _notes/
 /bower_components/
 /node_modules/
 
-#Ignore .MP4 files
+#Ignore .MP4 files -test a change
 *.mp4
 *.MP4
