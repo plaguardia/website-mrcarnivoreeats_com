@@ -8,3 +8,4 @@ _notes/
 #Ignore .MP4 files -test a change - test branch
 *.mp4
 *.MP4
+*.DS_Store
