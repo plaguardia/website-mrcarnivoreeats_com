@@ -1,0 +1,6 @@
+git checkout -b [dev branch name]
+
+make your changes
+
+git commit -am "things you changed"
+
