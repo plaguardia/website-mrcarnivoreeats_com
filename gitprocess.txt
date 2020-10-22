@@ -1,7 +1,19 @@
-git checkout -b [dev branch name]
+    git checkout -b [dev branch name]
 
 make your changes
 
-git commit -am "things you changed"
+    git commit -am "things you changed"
 
-git push --set-upstream origin [dev branch name]
+    git push --set-upstream origin [dev branch name]
+
+go to github gui run pull request process and merge to master (should be a popup)
+
+Once merged delete the branch in gui if you want (remote branch)
+
+switch back to master branch
+
+    git checkout master
+
+delete local dev branch
+
+    git branch -d [dev branch name]
