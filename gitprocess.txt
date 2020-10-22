@@ -1,0 +1,7 @@
+git checkout -b [dev branch name]
+
+make your changes
+
+git commit -am "things you changed"
+
+git push --set-upstream origin [dev branch name]
