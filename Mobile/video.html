@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mr. Carnivore</title>
+    <link rel="stylesheet/less" type="text/css" href="mobile.less" />
+    <script src="//cdn.jsdelivr.net/npm/less" ></script>
+  </head>
+
+<style>
+/*VIDEO CSS Start*/
+.video-container {
+	position:relative;
+	width:90%;
+	margin: 0 auto;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+    margin-bottom: 75px;
+    margin-top: 50px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+</style>
+
+
+  <body>
+    <!--Navi-->
+    <div class="outer-menu">
+      <input class="checkbox-toggle" type="checkbox" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="home.html">FEED</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="#">Video</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="band.html">Band</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Body Content-->
+    <img class="center" style="width:15%; margin-top:25px; border: thick" src="../Images/stack-logo.png" alt="Mr. Carnivore" />
+
+    <!--START video-->
+    <div class="back-fade">
+
+    <!--START YouTube Videos-->
+    
+    <!--COVIDEO Old Dog-->
+	<div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ZQtMRno3yUU?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!--COVIDEO Missing the War-->
+    <div class="video-container">    
+        <iframe src="https://www.youtube.com/embed/J_o6rmoaJfE?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+	<!--Paradise-->
+    <div class="video-container"> 
+        <iframe src="https://www.youtube.com/embed/49_jjNKbPaw?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!--Hot Air Balloon-->  
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/1c3R20SGHaM?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!--END YouTube Videos-->
+    
+    </div>
+    <!--END video-->
+</body>
+</html>

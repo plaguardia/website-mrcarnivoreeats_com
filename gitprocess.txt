@@ -8,11 +8,11 @@ make your changes
 
 go to github gui run pull request process and merge to master (should be a popup)
 
-Once merged delete the branch in gui if you want (remote branch)
-
-switch back to master branch
+switch back to master branch on local
 
     git checkout master
+
+    git pull
 
 delete local dev branch
 
