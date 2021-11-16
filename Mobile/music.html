@@ -5,153 +5,246 @@
     <title>Mr. Carnivore</title>
     <link rel="stylesheet/less" type="text/css" href="mobile.less" />
     <script src="//cdn.jsdelivr.net/npm/less" ></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
   </head>
 
   <style>
     /*Page specific CSS*/
-    table {
-        width: 100%;
-        margin: auto 0;
+    h1 { color: #f2f2f2; text-align:center; font-family: "Architects Daughter"; font-size: 5vw; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; margin-bottom: 60px; } 
+    h3 { color: #f2f2f2; text-align:center; font-family: "Architects Daughter"; font-size: 1.75vw; font-style: normal; font-variant: normal; font-weight: 700; line-height: 29.5px;  margin-bottom: 60px } 
+    p { color: #f2f2f2; text-align:center; font-family: "Architects Daughter"; font-size: 1.5vw; font-style: normal; font-variant: normal; font-weight: 500; line-height: 29.5px; } 
+    blockquote { font-family: "Architects Daughter"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+    pre { font-family: "Architects Daughter"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+    .back-fade {
+    background-color: fade(#0a0a0a, 60%);
     }
-    
-    table img {
-        height: auto;
-        width: 90%;
-    }
-    
-    table tr th {
-        height: 150px;
-        color: #f2f2f2;
-        font-size: 4vw;
-        margin: auto 0;
-        text-align:center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }	
-    
-    .social-button-cell {
-      width: 33%; 
-      display: table-cell;  
-      padding: 5%;
-    }
-    
+
     .social-button-cell img {
         opacity: 1.0;
         filter:alpha(opacity=100);
     }
-    
+
     .social-button-cell img:hover {
         opacity: 0.5;
         filter:alpha(opacity=40);
     }
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+    }
+
+    .spacer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20vh;
+    width: 100%;
+    }
+
+    .wrap {
+        width: 100%;
+        margin: auto 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    /*
+    @media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+    }
+    */
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+    float: right;
+    width: 26%;
+    padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
     
     </style>
 
-  <body>
-    <!--Navi-->
-    <div class="outer-menu">
-      <input class="checkbox-toggle" type="checkbox" />
-      <div class="hamburger">
-        <div></div>
-      </div>
-      <div class="menu">
-        <div>
-          <div>
-            <ul>
-              <li><a href="home.html">FEED</a></li>
-              <li><a href="#">Music</a></li>
-              <li><a href="video.html">Video</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="band.html">Band</a></li>
-            </ul>
-          </div>
+    <body>
+        <!--Navi-->
+        <div class="outer-menu">
+        <input class="checkbox-toggle" type="checkbox" />
+        <div class="hamburger">
+            <div></div>
         </div>
-      </div>
-    </div>
+        <div class="menu">
+            <div>
+            <div>
+                <ul>
+                <li><a href="home.html">FEED</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="band.html">Band</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
 
-    <!--Body Content-->
-    <img class="center" style="width:15%; margin-top:25px; border: thick" src="../Images/stack-logo.png" alt="Mr. Carnivore" />
+        <!--Body Content-->
+        <img class="center" style="width:15%; margin-top:25px; border: thick" src="../Images/stack-logo.png" alt="Mr. Carnivore" />
 
-    <!--START music table-->
-    <div class="back-fade">
-        <table>
-            <tr>
-                <th style="width: 55%"><img src="../Images/music/troll-min.jpg" alt="MrCarnivoreTroll"></th>
-                <th style="width: 35%">
-                    <p style="font-size: 4vw;">Troll</p>
-                    <p style="font-size: 2.5vw">Troll (Single)</p>
-                    <div style="width: 100%; display: table; margin: auto;">
-                        <div style="display: table-row;">
-                            <div class = "social-button-cell">
-                                <!--Spotify-->
-                                <a href="spotify:track:11EoXaLvtmrJV0t6ybwnY6" target="_blank"><img border="0" alt="Spotify" src="../Images/Icons/Listen/spotify-logo-png-7072.png"></a>
-                            </div>
-                            <div class = "social-button-cell">
-                                <!--Apple Music-->
-                                <a href="https://music.apple.com/us/album/troll-single/1543479659" target="_blank"><img border="0" alt="Apple" src="../Images/Icons/Listen/applemusic-logo-png-2356.png"></a>
-                            </div>
-                            <div class = "social-button-cell">
-                                <!--Youtube Music-->
-                                <a href="https://music.youtube.com/playlist?list=OLAK5uy_khaVeMLGEigr1DIkv53F27GfvpYsflUpQ" target="_blank"><img border="0" alt="YouTube" src="../Images/Icons/Listen/youtube_social_circle_red.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                </th>
-                </tr>
-        </table>
+        <!--START music table-->
+        <div class="back-fade">
 
-        <table>
-            <tr>
-            <th style="width: 55%;"><img src="../Images/music/BlueLightAlbum-min.jpg" alt="MrCarnivoreBlueLight"></th>
-            <th style="width: 35%;">
-                <p style="font-size: 4vw;">Blue Light</p>
-                <p style="font-size: 2.5vw;">Intro<br>Upper Half<br>Hot Air Balloon<br>Wind Me Up<br>Bible Girl<br>Cello<br>Paradise<br>Starting Again<br>Outro</p>
-                <div style="width: 100%; display: table; margin: auto;">
-                    <div style="display: table-row;">
-                        <div class = "social-button-cell">
-                            <!--Spotify-->
-                            <a href="spotify:album:6Msr9xFM6s4jJSaGcSRu6h" target="_blank"><img border="0" alt="Spotify" src="../Images/Icons/Listen/spotify-logo-png-7072.png"></a>
-                        </div>
-                        <div class = "social-button-cell">
-                            <!--Apple Music-->
-                            <a href="https://music.apple.com/us/album/blue-light/1412792916" target="_blank"><img border="0" alt="Apple" src="../Images/Icons/Listen/applemusic-logo-png-2356.png"></a>
-                        </div>
-                        <div class = "social-button-cell">
-                            <!--Youtube Music-->
-                            <a href="https://music.youtube.com/playlist?list=OLAK5uy_mXRdEZ2-6CG18CEHX7-k4cF8CfEfhPtTk" target="_blank"><img border="0" alt="YouTube" src="../Images/Icons/Listen/youtube_social_circle_red.png"></a>
-                        </div>
-                    </div>
-                </div>
-                </th>
-            </tr>
-        </table>
+                <!--DRUGS-->
+                <div class="spacer">
+           
+                   <h1>Drugs</h1>
+                   <p>~2021~</p>
+                   <h3>Drugs (Single)</h3>
+           
+                   <div class="center">
+                       <div class="row">
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Spotify-->
+                                   <a href="https://open.spotify.com/track/2WO2aohjinMibG2vqblFEr?si=10341f51ec404fb9" target="_blank"><img border="0" alt="Spotify" src="../Images/Icons/Listen/spotify-logo-png-7072.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Apple Music-->
+                                   <a href="https://music.apple.com/us/album/drugs/1590033004?i=1590033005" target="_blank"><img border="0" alt="Apple" src="../Images/Icons/Listen/applemusic-logo-png-2356.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Youtube Music-->
+                                   <a href="https://music.youtube.com/watch?v=wv_JF40pdbw&feature=share" target="_blank"><img border="0" alt="YouTube" src="../Images/Icons/Listen/youtube_social_circle_red.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+           
+                       </div>
+                   </div>
+           
+                   <img src="../Images/music/drugs-artwork-min.jpg" alt="MrCarnivoreDrugs" class="center">
+           
+               </div>
+           
+           
+                <!--TROLL-->
+               <div class="spacer">
+           
+                   <h1>Troll</h1>
+                   <p>~2020~</p>
+                   <h3>Troll (Single)</h3>
+           
+                   <div class="center">
+                       <div class="row">
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Spotify-->
+                                   <a href="https://open.spotify.com/album/678z5nZp6GYYv1LhTCHpc1?si=-FUKy0QjQ0yPSCKPNJei0g" target="_blank"><img border="0" alt="Spotify" src="../Images/Icons/Listen/spotify-logo-png-7072.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Apple Music-->
+                                   <a href="https://music.apple.com/us/album/troll-single/1543479659" target="_blank"><img border="0" alt="Apple" src="../Images/Icons/Listen/applemusic-logo-png-2356.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Youtube Music-->
+                                   <a href="https://music.youtube.com/playlist?list=OLAK5uy_khaVeMLGEigr1DIkv53F27GfvpYsflUpQ" target="_blank"><img border="0" alt="YouTube" src="../Images/Icons/Listen/youtube_social_circle_red.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+           
+                   <img src="../Images/music/troll-min.jpg" alt="MrCarnivoreTroll" class="center">
+           
+               </div>
+           
+               
+               <!--COLD OUTSIDE-->
+               <div class="spacer">
+           
+                   <h1>Baby it's Cold Outside</h1>
+                   <p>~2019~</p>
+                   <h3>Baby it's Cold Outside (Single Special)</h3>
+           
+                   <div class="center">
+                       <div class="row">
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Spotify-->
+                                   <a href="https://open.spotify.com/album/1IBJYscjOfUdCvIaIHkMpv?si=Ua1NriJXSUqxcVdQsaetOQ" target="_blank"><img border="0" alt="Spotify" src="../Images/Icons/Listen/spotify-logo-png-7072.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Apple Music-->
+                                   <a href="https://music.apple.com/us/album/baby-its-cold-outside-single/1484417340" target="_blank"><img border="0" alt="Apple" src="../Images/Icons/Listen/applemusic-logo-png-2356.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Youtube Music-->
+                                   <a href="https://music.youtube.com/playlist?list=OLAK5uy_n11N0evhBPGJHrNr4bc6cjd5lF3sqrSYc" target="_blank"><img border="0" alt="YouTube" src="../Images/Icons/Listen/youtube_social_circle_red.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+           
+                   <img src="../Images/music/coldOutside_Final-min.jpg" alt="MrCarnivoreBlueLight" class="center">
+           
+               </div>
+           
+           
+               <!--BLUE LIGHT-->
+               <div class="spacer">
+           
+                   <h1>Blue Light</h1>
+                   <p>~2018~</p>
+                   <h3>Intro<br>Upper Half<br>Hot Air Balloon<br>Wind Me Up<br>Bible Girl<br>Cello<br>Paradise<br>Starting Again<br>Outro</h3>
+           
+                   <div class="center">
+                       <div class="row">
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Spotify-->
+                                   <a href="https://open.spotify.com/album/6Msr9xFM6s4jJSaGcSRu6h?si=1opNiUxhR6Cf2nIvzWJxyA" target="_blank"><img border="0" alt="Spotify" src="../Images/Icons/Listen/spotify-logo-png-7072.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Apple Music-->
+                                   <a href="https://music.apple.com/us/album/blue-light/1412792916" target="_blank"><img border="0" alt="Apple" src="../Images/Icons/Listen/applemusic-logo-png-2356.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                           <div class="column">
+                               <div class = "social-button-cell">
+                                   <!--Youtube Music-->
+                                   <a href="https://music.youtube.com/playlist?list=OLAK5uy_mXRdEZ2-6CG18CEHX7-k4cF8CfEfhPtTk" target="_blank"><img border="0" alt="YouTube" src="../Images/Icons/Listen/youtube_social_circle_red.png" style="width: 50%;"></a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+           
+                   <img src="../Images/music/BlueLightAlbum-min.jpg" alt="MrCarnivoreBlueLight" class="center">
+           
+               </div>
 
-        <table>
-            <tr>
-                <th style="width: 55%"><img src="../Images/music/coldOutside_Final-min.jpg" alt="MrCarnivoreColdOutside"></th>
-                <th style="width: 35%">
-                    <p style="font-size: 4vw;">Baby it's Cold Outside</p>
-                    <p style="font-size: 2.5vw">Baby it's Cold Outside (Single Special)</p>
-                    <div style="width: 100%; display: table; margin: auto;">
-                        <div style="display: table-row;">
-                            <div class = "social-button-cell">
-                                <!--Spotify-->
-                                <a href="spotify:album:1IBJYscjOfUdCvIaIHkMpv" target="_blank"><img border="0" alt="Spotify" src="../Images/Icons/Listen/spotify-logo-png-7072.png"></a>
-                            </div>
-                            <div class = "social-button-cell">
-                                <!--Apple Music-->
-                                <a href="https://music.apple.com/us/album/baby-its-cold-outside-single/1484417340" target="_blank"><img border="0" alt="Apple" src="../Images/Icons/Listen/applemusic-logo-png-2356.png"></a>
-                            </div>
-                            <div class = "social-button-cell">
-                                <!--Youtube Music-->
-                                <a href="https://music.youtube.com/playlist?list=OLAK5uy_n11N0evhBPGJHrNr4bc6cjd5lF3sqrSYc" target="_blank"><img border="0" alt="YouTube" src="../Images/Icons/Listen/youtube_social_circle_red.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                </th>
-                </tr>
-        </table>
-    </div>
-    <!--END music table-->
-</body>
+        </div>
+
+    </body>
+
 </html>
