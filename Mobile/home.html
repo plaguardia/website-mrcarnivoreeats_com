@@ -5,8 +5,29 @@
     <title>Mr. Carnivore</title>
     <link rel="stylesheet/less" type="text/css" href="mobile.less" />
     <script src="//cdn.jsdelivr.net/npm/less" ></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../JS/js.cookie.min.js"></script>
+    <script type="text/javascript" src="../JS/popup.js"></script>
   </head>
   <body>
+    <div id="shownOnlyOnceADay">
+      <!-- This text should only be shown once a day! -->
+      <div id="boxes">
+        <div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window"> 
+        DRUGS
+        <div id="links" >
+        <a href="https://open.spotify.com/track/2WO2aohjinMibG2vqblFEr?si=10341f51ec404fb9" target="blank">Spotify</a> | <a href="https://music.youtube.com/watch?v=wv_JF40pdbw&feature=share" target="blank">YouTube</a> | <a href="https://music.apple.com/us/album/drugs/1590033004?i=1590033005" target="blank">Apple</a>
+        </div>
+        
+        <img src="../Images/music/drugs-artwork-min.jpg" style="max-width: 100%;">
+        </div>
+        
+        <div style="width: 1478px; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
+  
+      </div>
+    </div>
+
     <!--Navi-->
     <div class="outer-menu">
       <input class="checkbox-toggle" type="checkbox" />

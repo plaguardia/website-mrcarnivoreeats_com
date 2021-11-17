@@ -18,6 +18,44 @@ body {
   background-image:url(../Images/WebBackground_LoFi.png);
 }
 
+#mask {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9000;
+	background-color:#000;
+	display:none;
+  }  
+  #boxes .window {
+	position:absolute;
+	left:0;
+	top:0;
+	width:440px;
+	height:200px;
+	display:none;
+	z-index:9999;
+	padding:20px;
+	border-radius: 15px;
+	text-align: center;
+  }
+  #boxes #dialog {
+	width:450px; 
+	height:auto;
+	padding:10px;
+	background-color:#ffffff;
+	font-family: "Architects Daughter";
+	font-style: normal; 
+	font-size: 35pt;
+  }
+  
+  #links{
+	font-family: "Architects Daughter";
+	font-style: italic; 
+	height:auto;
+	padding:10px;
+	font-size: 16pt;
+  }
+
 .back-fade {
   background-color: fade(#0a0a0a, 60%);
   margin-top: 20px;
